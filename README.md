@@ -1,2 +1,2 @@
 # thehybrid18.github.io
-resume
+resume example website with example code and visualizations 
