@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,6 +10,35 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="carousel.css" rel="stylesheet">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .featured-projects {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 6px;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-projects h3 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .featured-projects ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .featured-projects ul li a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        .featured-projects ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,12 +48,11 @@
             <p class="intro-position">
                 <span>Data Analysis | </span>
                 <span>Machine Learning | </span>
-                <span>Business Analytics |</span>
+                <span>Business Analytics </span>
             </p>
-
             <p><a class="btn btn-primary btn-lg" href="mailto:tsanyude@asu.edu" role="button">Contact Me</a></p>
-
         </div>
+
         <!-- Mini Bio skills section -->
         <div class="row" id="Ty-about">
             <div class="col-md-6">
@@ -35,49 +64,40 @@
                         <p>My education and work experience plus volunteer experience give me a thorough foundation in
                             principles that affect businesses and people every day and equip me with advantages others
                             might not offer.<br><br><b> Proficient in computers from: </b>MS Office Suite, MS Excel, MS
-                            Visio, MS SharePoint, SAP financials, Tableau, EazyBi, PostgreSQL, MySQL, SQL, NoSQL, SQLITE,
-                            SPSS, Essbase, Quickbooks, Minitab, Linear programing, ETL, PYTHON, Flask, HTML, R,
-                            Javascript, D3.js, Plotly.js, Text mining, Hadoop, AWS and Internet </p>
+                            Visio, MS SharePoint, SAP financials, Tableau, PowerBi, PostgreSQL, SQL, NoSQL, 
+                            SPSS, Essbase, Quickbooks, Minitab, Airflow, ETL, PYTHON, Flask, HTML, R,
+                            Javascript, D3.js, Plotly.js, Text mining, LLMs, Sagemaker AI, Hadoop, AWS and Internet </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
 
+            <div class="col-md-6">
                 <!-- Profile -->
                 <h3 style="font-weight: bold; border-bottom: 2px solid #333;">Profile</h3>
-                <p></p>
-                
                 <ul class="info-list">
-                    <li>
-                        <strong>Full Name:</strong>
-                        <span>Ty Sanyude</span>
-                    </li>
-                    <li>
-                        <strong>Job:</strong>
-                        <span>Analytics Consultant</span>
-                    </li>
-                    <li>
-                        <strong>Linkedin:</strong>
-                        <span><a href="https://www.linkedin.com/in/tsanyude/">Ty Sanyude</span></a>
-                    </li>
-                    <li>
-                        <strong>Email:</strong>
-                        <span><a href="mailto:tsanyude@asu.edu">tsanyude@asu.edu</span></a>
-                    </li>
-                    <li>
-                        <strong>Education:</strong>
-                        <span>Arizona State University, MSBA</span>
-                    </li>
+                    <li><strong>Full Name:</strong> <span>Ty Sanyude</span></li>
+                    <li><strong>Job:</strong> <span>Analytics Consultant</span></li>
+                    <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/tsanyude/">Ty Sanyude</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:tsanyude@asu.edu">tsanyude@asu.edu</a></li>
+                    <li><strong>Education:</strong> <span>Arizona State University, MSBA</span></li>
                 </ul>
-<!-- /list for profile -->
 
+                <!-- 🚀 Featured Projects -->
+                <div class="featured-projects">
+                    <h3>🚀 Featured Projects</h3>
+                    <ul>
+                        <li><a href="https://github.com/thehybrid18/linear-regression-with-flask" target="_blank">Linear Regression with Flask</a></li>
+                        <li><a href="https://github.com/thehybrid18/deeplearning-cat-dog-classifier" target="_blank">Retro Deep Learning Cat-Dog Classifier</a></li>
+                        <li><a href="https://github.com/thehybrid18/SHINY" target="_blank">R Shiny for Data Analysis</a></li>
+                        <li><a href="https://github.com/thehybrid18/HomeMatch-AI" target="_blank">AI Real Estate Assistant Chatbox</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <!-- us map -->
         <div class="row section-intro" id="featured-chart">
             <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Data Analytics and Insight Unveiled</h3>
-
             <div class="col-md-6">
                 <p style="font-size: 20px; line-height: 1.6; margin-bottom: 20px; text-indent: 20px;">
                     Data analytics is all about uncovering insights from data and using them to make better business decisions.
@@ -89,30 +109,22 @@
                     that can be gleaned from well-crafted visualizations, interesting is it not?
                 </p>
             </div>
-
             <div class="col-md-6">
                 <div id="plot1"></div>
                 <script src="dashboard.js"></script>
             </div>
-
-            <!-- Pie chart -->
             <div class="col-md-6">
                 <div id="plot2"></div>
                 <script src="dashboard.js"></script>
             </div>
         </div>
 
-        <!-- Carousel ================================================== -->
+        <!-- Carousel -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-            <!-- START THE FEATURETTES -->
-
             <hr class="featurette-divider">
-
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">Plotly Dashboard <span class="text-muted">Very
-                            interesting...</span></h2>
+                    <h2 class="featurette-heading">Plotly Dashboard <span class="text-muted">Very interesting...</span></h2>
                     <p class="lead">I use a lot of visualization apps, but Plotly is definitely one of the more
                         interactive ones. Chances are you have seen their charts on a blog or a newsite. I will share
                         more examples shortly on my site. I also tinker around with Plotly in R. Shiny web apps can be
@@ -124,37 +136,29 @@
                         more of my own visualizations and examples shortly on my site, so stay tuned!</p>
                 </div>
                 <div class="col-md-5">
-                    <img class="featurette-image img-responsive center-block" src="nasa.jpg"
-                        alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="nasa.jpg" alt="NASA Image">
                 </div>
             </div>
-
             <hr class="featurette-divider">
-
             <div class="row featurette">
                 <div class="col-md-7 col-md-push-5">
-                    <h2 class="featurette-heading">Yes there's data pipelines and stuff <span
-                            class="text-muted">Python is powerful</span></h2>
+                    <h2 class="featurette-heading">Yes there's data pipelines <span class="text-muted">Python is powerful</span></h2>
                     <p class="lead">This is based on a college project I did not too long ago. We used python for data
                         cleansing (scraping, etl processing with sql alchemy, etc.) and azure ml to help us predict
                         whether or not a flight was safe. The company wanted to analyze costly lost flights due to
                         weather and other reasons to see if there were areas of improvement. For example, if a flight
                         is lost due to bad weather reported by the pilot we could create an analytics solution within
                         the dashboard to look at lost flights that were actually capturable. It gave our dashboard solid
-                        predictive analytics capabilities also.</p>
+                        predictive analytics capabilities also...</p>
                 </div>
                 <div class="col-md-5 col-md-pull-7">
-                    <img class="featurette-image img-responsive center-block" src="scrape.png"
-                        alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="scrape.png" alt="Scrape Example">
                 </div>
             </div>
-
             <hr class="featurette-divider">
-
             <div class="row featurette">
                 <div class="col-md-5">
-                    <h2 class="featurette-heading">The Excel one is sharp too. <span
-                            class="text-muted">Indeed...</span></h2>
+                    <h2 class="featurette-heading">The Excel one is sharp too. <span class="text-muted">Indeed...</span></h2>
                     <p class="lead">In conclusion, as an analytics consultant with over 7 years of experience, I am
                         passionate about leveraging the power of visualization tools like Plotly to help businesses gain
                         valuable insights from their data. In addition to my consulting work, I also have experience
@@ -165,36 +169,20 @@
                         opportunities!</p>
                 </div>
                 <div class="col-md-7">
-                    <img class="featurette-image img-responsive center-block" src="exceldash.png"
-                        alt="Generic placeholder image">
+                    <img class="featurette-image img-responsive center-block" src="exceldash.png" alt="Excel Dashboard">
                 </div>
             </div>
-
             <hr class="featurette-divider">
-
-            <!-- /END THE FEATURETTES -->
-
             <footer class="page-footer font-small special-color-dark pt-4">
-
-                <!-- Footer Elements -->
                 <div class="container">
-
-                    <!-- Social buttons -->
-
-                    <!-- Footer Elements -->
-
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3">© 2023 Copyright Ty Sanyude
-
+                    <div class="footer-copyright text-center py-3">
+                        © 2025 Copyright Ty Sanyude
                     </div>
-                    <!-- Copyright -->
-
                 </div>
             </footer>
-            <!-- Footer -->
-
         </div>
     </div>
 </body>
 
-</html>                        
+</html>
+
